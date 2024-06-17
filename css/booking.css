@@ -1,0 +1,240 @@
+.booking {
+  padding: 80px 0;
+  background-color: #440f51;
+}
+
+.booking__title {
+  margin-bottom: 48px;
+}
+
+.form__title,
+.form__fun-subtitle {
+  margin-bottom: 40px;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1.16667;
+  text-align: center;
+  color: #fff;
+}
+
+.form__fun-subtitle {
+  margin-bottom: 2px;
+  text-align: left;
+}
+
+.form__fun {
+  padding-left: 100px;
+  padding-right: 120px;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 60px;
+}
+
+.form__fieldset-hall {
+  margin-bottom: 60px;
+  display: flex;
+  justify-content: space-between;
+  gap: 60px;
+}
+
+.form__label-hall {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 250px;
+  height: 55px;
+  flex-grow: 1;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 1.33333;
+  text-transform: uppercase;
+  text-align: center;
+  color: #000;
+  border-radius: 8px;
+  background-color: #fff;
+  cursor: pointer;
+}
+
+.form__hall {
+  position: absolute;
+  width: 0;
+  height: 0;
+  opacity: 0;
+  z-index: -1;
+}
+
+.form__fun-fieldset {
+  display: flex;
+  flex-direction: column;
+  gap: 21px;
+}
+
+.form__fun-fieldset label {
+  font-size: 22px;
+  cursor: pointer;
+}
+
+.real-radio,
+.real-checkbox {
+  position: absolute;
+  width: 0;
+  height: 0;
+  opacity: 0;
+  z-index: -1;
+}
+
+.form__fun-radio {
+  position: relative;
+  margin-right: 5px;
+  display: inline-block;
+  width: 27px;
+  height: 27px;
+  background-color: #fff;
+  border-radius: 50%;
+  vertical-align: text-top;
+}
+
+.form__fun-radio::before {
+  position: absolute;
+  display: inline-block;
+  content: '';
+  width: 16px;
+  height: 16px;
+  background-color: #000;
+  border-radius: 100%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  transition: 0.3s ease-in-out;
+}
+
+.real-radio:checked + .form__fun-radio::before {
+  transform: translate(-50%, -50%) scale(1);
+}
+
+.form__fun-checkbox {
+  margin-right: 12px;
+  position: relative;
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+  background-color: #fff;
+  vertical-align: text-top;
+}
+
+.form__fun-checkbox::before {
+  position: absolute;
+  display: inline-block;
+  content: '';
+  top: 50%;
+  left: 50%;
+  width: 18px;
+  height: 32px;
+  background-image: url('../img/icons/ok.svg');
+  background-repeat: no-repeat;
+  background-position: top;
+  transform: translate(-50%, -50%) scale(0);
+  transition: 0.3s ease-in-out;
+}
+
+.real-checkbox:checked + .form__fun-checkbox::before {
+  transform: translate(-50%, -50%) scale(1);
+}
+
+.form__title-time {
+  margin-bottom: 27px;
+}
+
+.form__choice-fieldset {
+  margin: 0 auto;
+  margin-bottom: 40px;
+  display: flex;
+  justify-content: space-between;
+  gap: 50px;
+  width: 980px;
+}
+
+.form__choice-input {
+  padding: 20px 25px;
+  width: 100%;
+  height: 52px;
+}
+
+.form__choice-item {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+  flex-basis: 300px;
+}
+
+.form__choice-item:first-child {
+  padding-top: 30px;
+  gap: 36px;
+}
+
+.form__choice-time {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 32px;
+}
+
+.form__choice-btn {
+  margin-left: auto;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 27px 12px 20px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.55556;
+  color: #211e1e;
+  background-color: #fff;
+  flex-grow: 1;
+}
+
+.form__choice-btn::after {
+  content: '';
+  background-image: url('../img/icons/arr-down.svg');
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 21px;
+  height: 15px;
+}
+
+.form__choice-number button {
+  width: 100%;
+}
+
+.form__choice-label {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 2.14286;
+  color: #fff;
+}
+
+.form__button {
+  margin: 0 auto;
+  display: flex;
+  justify-content: end;
+  width: 980px;
+}
+
+.form__btn {
+  padding: 16px 50px;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 1.27273;
+  text-transform: uppercase;
+  color: #6c0287;
+  background-color: #fff;
+  border-radius: 10px;
+}
+
+fieldset {
+  padding: 0;
+  margin: 0;
+  border: none;
+}

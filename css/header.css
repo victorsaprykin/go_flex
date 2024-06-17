@@ -1,0 +1,33 @@
+.header {
+  padding-top: 30px;
+}
+
+.header__inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navigation__list {
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+.navigation__link {
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 2.27273;
+  text-transform: uppercase;
+}
+.header__btn {
+  padding: 12px 32px;
+  font-weight: 700;
+  font-size: 22px;
+  color: #fff;
+  line-height: 1.36364;
+  text-transform: uppercase;
+  border: 3px solid #cd06ff;
+  background-color: #000;
+  border-radius: 10px;
+}

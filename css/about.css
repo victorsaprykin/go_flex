@@ -1,0 +1,93 @@
+.about {
+  padding-top: 50px;
+  padding-bottom: 100px;
+}
+
+.about__title {
+  margin-bottom: 47px;
+}
+
+.about__text {
+  line-height: 1.4;
+}
+
+.about__text:first-of-type {
+  margin-bottom: 28px;
+}
+
+.about__blockquote {
+  position: relative;
+  padding: 0;
+  padding-left: 35px;
+  margin-bottom: 30px;
+  display: inline-block;
+  max-width: 400px;
+  font-weight: 400;
+  font-size: 44px;
+  line-height: 1.13636;
+  text-transform: uppercase;
+}
+
+.about__blockquote::before {
+  position: absolute;
+  content: '';
+  display: inline-block;
+  left: 0;
+  width: 30px;
+  height: 30px;
+  background-image: url('../img/about/left_quot.svg');
+  background-repeat: no-repeat;
+}
+
+.about__blockquote::after {
+  position: absolute;
+  content: '';
+  display: inline-block;
+  right: 10px;
+  bottom: 25px;
+  width: 30px;
+  height: 30px;
+  background-image: url('../img/about/left_quot.svg');
+  background-repeat: no-repeat;
+  transform: rotate(180deg);
+}
+
+.about__inner {
+  display: flex;
+  gap: 80px;
+}
+
+.about__images {
+  max-width: 600px;
+}
+
+.about__descr {
+  max-width: 500px;
+}
+
+.about__concept {
+  padding-top: 56px;
+  display: flex;
+  flex-direction: column;
+}
+.about__autor {
+  position: relative;
+  margin-right: 10px;
+  align-self: flex-end;
+  font-size: 20px;
+  line-height: 1.4;
+  max-width: 266px;
+}
+
+.about__autor::before {
+  position: absolute;
+  display: inline-block;
+  content: '';
+  top: 0;
+  left: -109px;
+  width: 80px;
+  height: 80px;
+  background-image: url(/img/about/photo.jpg);
+  background-size: contain;
+  border-radius: 50%;
+}
