@@ -53,7 +53,7 @@
                   аппаратура</p>
               </li>
             </ul>
-            <button class="hero__btn">Забронировать</button>
+            <a href="#booking" class="hero__btn">Забронировать</a>
           </div>
           <a href="#booking" class="hero__down"></a>
         </div>
@@ -213,12 +213,19 @@
 
             <div class="form__choice-item">
               <div class="form__choice-time">
-                <button class="form__choice-btn">Дата</button>
-                <button class="form__choice-btn">Время</button>
+                <div class="form__choice-box">
+                  <input placeholder="Дата" class="form-control" type="text" onfocus="(this.type='date')"
+                    onblur="(this.type='text')" id="date">
+                </div>
+                <div class="form__choice-box">
+                  <input placeholder="Время" class="form-control" type="text" onfocus="(this.type='time')"
+                    onblur="(this.type='text')" id="time">
+                </div>
               </div>
-              <div class="form__choice-number">
-                <button class="form__choice-btn">Сколько человек</button>
-              </div>
+                  <div class="form__choice-number">
+                    <input placeholder="Время" class="form-control" type="text" onfocus="(this.type='number')" onblur="(this.type='text')"
+                      id="number">
+                  </div>
             </div>
             <div class="form__choice-item">
               <label class="form__choice-label">Имя
@@ -441,7 +448,8 @@
             Design by Anastasia Ilina
           </p>
           <p>
-            ilina9825@gmail.com
+            <a class="footer__developers-link" href="https://t.me/mrshmallowww" target="_blank">ilina9825@gmail.com</a>
+            
           </p>
         </div>
       </div>
