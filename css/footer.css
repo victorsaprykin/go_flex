@@ -15,3 +15,11 @@
   align-items: flex-end;
   gap: 6px;
 }
+
+.footer__developers-link {
+  transition: color .3s ease-in-out;
+}
+
+.footer__developers-link:hover {
+  color:  #eadeed;
+}

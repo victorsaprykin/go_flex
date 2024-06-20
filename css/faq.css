@@ -2,64 +2,58 @@
   margin-bottom: 44px;
 }
 
+.faq__list {
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+}
 .faq__item {
-  padding: 21px 70px;
-  margin-bottom: 20px;
+  padding: 30px 70px;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  position: relative;
+  cursor: pointer;
+  transition: 0.3s;
   font-weight: 700;
   font-size: 24px;
-  line-height: 1.16667;
-  color: #1c1a1a;
+  color: #000;
   background-color: #fff;
-  list-style: none;
+}
+/* ==================================Общие для всех типом линий==================================*/
+.faq__item::after, .faq__item:nth-child(even)::after {
+  content: "";
+  background-repeat: no-repeat;
+  background-position: right center;
+  display: block;
+  width: 46px;
+  height: 46px;
+  transition: 0.3s;
 }
 
-.faq__item-btn {
-  display: inline-block;
-  color: #6c0287;
-  transition: all 0.3s ease-in-out;
-}
-
-.faq__item-btn:hover {
+/*========================================= Для цветных=========================================*/
+.faq__item:nth-child(even) {
+  background-color: purple;
   color: #fff;
 }
 
-.faq__item-btn:hover svg {
-  fill: #6c0287;
+.faq__item:nth-child(even)::after {
+  background-image: url(../img/icons/plus-white.svg);
+}
+.faq__item:nth-child(even):hover::after {
+  background-image: url(../img/icons/plus-white--hover.svg);
+}
+.faq__item:nth-child(even):active::after {
+  background-image: url(../img/icons/minus-white.svg);
 }
 
-.faq__item-btn svg path {
-  transition: d 0.7s ease-in-out;
+/* ======================================Для белых============================================ */
+.faq__item::after {
+  background-image: url(../img/icons/plus-colored.svg);
 }
-
-.faq__item-btn:active svg path {
-  d: path('M13.0001 24.1695V23.4915H33.0001V24.1695H13.0001Z');
+.faq__item:hover::after {
+  background-image: url(../img/icons/plus-colored--hover.svg);
 }
-
-.faq__item-btn-purple {
-  display: inline-block;
-  color: #fff;
-  transition: all 0.3s ease-in-out;
-}
-
-.faq__item-btn-purple:hover {
-  color: #6c0287;
-}
-.faq__item-btn-purple:hover svg {
-  fill: #fff;
-}
-
-.faq__item-btn-purple:active svg path {
-  d: path('M13.0001 24.1695V23.4915H33.0001V24.1695H13.0001Z');
-}
-
-.faq__item:last-child {
-  margin-bottom: 0;
-}
-
-.faq__item:nth-child(2n) {
-  background-color: #440f51;
-  color: #fff;
+.faq__item:active::after {
+  background-image: url(../img/icons/minus-colored.svg);
 }

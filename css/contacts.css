@@ -26,6 +26,18 @@
   align-items: center;
   max-width: 268px;
   cursor: pointer;
+  transition: color .3s ease-in-out;
+}
+
+.contacts__link {
+  transition: color .3s ease-in-out;
+}
+
+.contacts__item:hover .contacts__link {
+  color: #eadeed;
+}
+.contacts__item:hover {
+  color: #eadeed;
 }
 
 .contacts__item:first-child {

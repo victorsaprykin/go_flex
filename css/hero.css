@@ -55,6 +55,7 @@
   bottom: 90px;
   width: 97px;
   height: 97px;
+  border: 1px solid transparent;
   transform: translateX(50%);
   cursor: pointer;
   transition: all 0.3s ease-in-out;

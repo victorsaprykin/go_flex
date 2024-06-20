@@ -114,7 +114,8 @@
 }
 
 
-.form__fun-radio::before {
+.form__fun-radio::before, 
+.form__fun-radio::after {
   position: absolute;
   display: inline-block;
   content: '';
@@ -127,7 +128,20 @@
   transition: 0.3s ease-in-out;
 }
 
-.real-radio:checked + .form__fun-radio::before {
+.form__fun-radio::after {
+  width: 15px;
+  height: 15px;
+  background-color: #000;
+  border-radius: 50%;
+}
+
+
+
+.real-radio:checked + .form__fun-radio::after {
+  transform: translate(-50%, -50%) scale(1);
+}
+
+.real-radio:focus + .form__fun-radio::before {
   transform: translate(-50%, -50%) scale(1);
 }
 
@@ -142,7 +156,8 @@
   transition: all .2s ease-in-out;
 }
 
-.form__fun-checkbox::before {
+.form__fun-checkbox::before,
+.form__fun-checkbox::after {
   position: absolute;
   display: inline-block;
   content: '';
@@ -155,7 +170,21 @@
   transition: 0.3s ease-in-out;
 }
 
-.real-checkbox:checked + .form__fun-checkbox::before {
+.form__fun-checkbox::after {
+  background-image: url('../img/icons/ok.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 24px;
+  height: 24px;
+}
+
+
+
+.real-checkbox:focus + .form__fun-checkbox::before {
+  transform: translate(-50%, -50%) scale(1);
+}
+
+.real-checkbox:checked + .form__fun-checkbox::after {
   transform: translate(-50%, -50%) scale(1);
 }
 
@@ -205,6 +234,7 @@
 .form__choice-box {
   max-width: 134px;
   height: 52px;
+  border: 2px solid transparent;
 }
 
 .form-control {
@@ -225,7 +255,7 @@
   justify-content: space-between;
   align-items: center;
   padding: 12px 27px 12px 20px;
-  width: 100%;
+  min-width: 134px;
   font-weight: 400;
   font-size: 18px;
   line-height: 1.55556;
@@ -234,12 +264,16 @@
   flex-grow: 1;
 }
 
+.form__choice-number {
+  width: 100%;
+}
+
 .form__choice-box::after,
 .form__choice-number::after {
   content: '';
   background-image: url('../img/icons/arr-down.svg');
   background-position: center;
-  background-size: contain;
+  background-size: cover;
   background-repeat: no-repeat;
   width: 21px;
   height: 15px;

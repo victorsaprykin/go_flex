@@ -14,7 +14,7 @@
 .benefits__item {
   position: relative;
   flex-basis: 380px;
-  transition: .5s ease-in-out;
+  transition: transform .3s ease-in-out;
 }
 
 .benefits__item:hover {
