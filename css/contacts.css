@@ -1,5 +1,4 @@
 .contacts {
- 
   background: linear-gradient(180deg, #1b1a1b 0%, #370a37 100%);
 }
 
@@ -44,5 +43,20 @@
 }
 
 .social__link {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
   color: #fff;
+  transition: color 0.3s ease-in-out;
+}
+
+.social__link:hover {
+  color: #eadeed;
+}
+.social__link:focus {
+  color: #eadeed;
+  border: 1px solid #cd06ff;
+}
+.social__link:active {
+  color: #cd06ff;
 }

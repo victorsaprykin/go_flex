@@ -40,25 +40,45 @@
   flex-direction: column;
   max-width: 50%;
 }
+
 .hero__descr {
   margin-bottom: 150px;
   display: flex;
   gap: 23px;
 }
 
-.hero__down::after {
+.hero__down {
   display: inline-block;
   position: absolute;
-  content: '';
+  color: #fff;
   right: 50%;
   bottom: 90px;
   width: 97px;
   height: 97px;
-  background-image: url('../img/hero/down.svg');
-  background-size: 97px;
-  background-repeat: no-repeat;
   transform: translateX(50%);
   cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.hero__down:hover svg {
+  fill: #fff;
+}
+
+.hero__down:hover {
+  color: #6c0287;
+}
+
+.hero__down:focus {
+  border: 1px solid #cd06ff;
+}
+
+.hero__down:active {
+  color: #fff;
+}
+
+.hero__down:active svg {
+  stroke: #cd06ff;
+  fill: #cd06ff;
 }
 
 .hero__item {
@@ -99,4 +119,14 @@
   color: #fff;
   border-radius: 10px;
   background-color: #6c0287;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.hero__btn:hover,
+.hero__btn:focus {
+  background-color: #840aa3;
+}
+.hero__btn:active {
+  background-color: #640aa3;
+  border: none;
 }
