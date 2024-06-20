@@ -14,6 +14,11 @@
 .benefits__item {
   position: relative;
   flex-basis: 380px;
+  transition: .5s ease-in-out;
+}
+
+.benefits__item:hover {
+  transform: scale(1.1);
 }
 
 .benefits__text {
