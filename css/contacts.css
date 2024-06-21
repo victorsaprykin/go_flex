@@ -25,8 +25,11 @@
   display: flex;
   align-items: center;
   max-width: 268px;
-  cursor: pointer;
   transition: color .3s ease-in-out;
+}
+
+.contacts__item:not(:first-child) {
+  cursor: pointer;
 }
 
 .contacts__link {
@@ -44,10 +47,12 @@
   margin-bottom: 24px;
 }
 
-.contacts__link {
+.contacts__link,
+.contacts__point {
   padding-right: 26px;
   color: #cd06ff;
 }
+
 
 .social {
   display: flex;

@@ -33,7 +33,7 @@
 
 /*========================================= Для цветных=========================================*/
 .faq__item:nth-child(even) {
-  background-color: purple;
+  background-color: #440f51;
   color: #fff;
 }
 
