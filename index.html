@@ -142,18 +142,14 @@
         <form class="form" action="https://jsonplaceholder.typicode.com/posts" method="POST">
           <h3 class="form__title">Выбери зал</h3>
           <fieldset class="form__fieldset-hall">
-            <label class="form__label-hall">
-              <input class="form__hall" type="radio" name="halls" value="80`s vibes">
-              80`s vibes</label>
-            <label class="form__label-hall">
-              <input class="form__hall" type="radio" name="halls" value="Star wars">
-              Star wars</label>
-            <label class="form__label-hall">
-              <input class="form__hall" type="radio" name="halls" value="Wild west">
-              Wild west</label>
-            <label class="form__label-hall">
-              <input class="form__hall" type="radio" name="halls" value="Neon style">
-              Neon style</label>
+            <input class="form__hall" type="radio" name="halls" value="80`s vibes" id="vibes">
+            <label class="form__label-hall" for="vibes">80`s vibes</label>
+            <input class="form__hall" type="radio" name="halls" value="Star wars" id="wars">
+            <label class="form__label-hall" for="wars">Star wars</label>
+            <input class="form__hall" type="radio" name="halls" value="Wild west" id="wild">
+            <label class="form__label-hall" for="wild">Wild west</label>
+            <input class="form__hall" type="radio" name="halls" value="Neon style" id="neon">
+            <label class="form__label-hall" for="neon">Neon style</label>
           </fieldset>
           <h3 class="form__title">Собери набор развлечений</h3>
           <div class="form__fun">
