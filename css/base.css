@@ -7,7 +7,7 @@
   text-rendering: optimizeLegibility;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
   -webkit-tap-highlight-color: transparent;
-  
+
   --main-color: #fff;
   --bg-color:  #1b1a1b;
   --accent-color: #440f51;
@@ -90,6 +90,11 @@ address {
 
 section {
   padding-bottom: 100px;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
 }
 
 .visually-hidden {
