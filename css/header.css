@@ -32,10 +32,10 @@
   padding: 12px 32px;
   font-weight: 700;
   font-size: 22px;
-  color: #fff;
+  color: var(--main-color);
   line-height: 1.36364;
   text-transform: uppercase;
-  border: 3px solid #cd06ff;
+  border: 3px solid var(--accent-border);
   background-color: transparent;
   border-radius: 10px;
   transition: background-color 0.3s ease-in-out;
@@ -43,8 +43,8 @@
 
 .header__btn:hover,
 .header__btn:focus {
-  background-color: #6c0287;
-  border: 3px solid #6c0287;
+  background-color: var(--accent-btn);
+  border: 3px solid var(--accent-btn);
 }
 
 .header__btn:active {

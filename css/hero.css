@@ -30,7 +30,7 @@
   font-weight: 400;
   font-size: 28px;
   line-height: 1.78571;
-  color: #fff;
+  color: var(--main-color);
 }
 
 .hero__inner {
@@ -50,7 +50,7 @@
 .hero__down {
   display: inline-block;
   position: absolute;
-  color: #fff;
+  color: var(--main-color);
   right: 50%;
   bottom: 90px;
   width: 97px;
@@ -62,24 +62,24 @@
 }
 
 .hero__down:hover svg {
-  fill: #fff;
+  fill: var(--main-color);
 }
 
 .hero__down:hover {
-  color: #6c0287;
+  color: var(--accent-btn);
 }
 
 .hero__down:focus {
-  border: 1px solid #cd06ff;
+  border: 1px solid var(--accent-border);
 }
 
 .hero__down:active {
-  color: #fff;
+  color: var(--main-color);
 }
 
 .hero__down:active svg {
-  stroke: #cd06ff;
-  fill: #cd06ff;
+  stroke: var(--accent-border);
+  fill: var(--accent-border);
 }
 
 .hero__item {
@@ -94,7 +94,7 @@
 .hero__accent {
   font-weight: 900;
   font-size: 100px;
-  color: #cd06ff;
+  color: var(--accent-border);
 }
 
 .hero__accent--small {
@@ -106,7 +106,7 @@
   font-weight: 400;
   font-size: 30px;
   text-align: center;
-  color: #fff;
+  color: var(--main-color);
 }
 
 .hero__btn {
@@ -117,9 +117,9 @@
   font-size: 26px;
   line-height: 1.15385;
   text-transform: uppercase;
-  color: #fff;
+  color: var(--main-color);
   border-radius: 10px;
-  background-color: #6c0287;
+  background-color: var(--accent-btn);
   transition: background-color 0.3s ease-in-out;
 }
 

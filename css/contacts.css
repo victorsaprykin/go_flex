@@ -50,7 +50,7 @@
 .contacts__link,
 .contacts__point {
   padding-right: 26px;
-  color: #cd06ff;
+  color: var(--accent-border);
 }
 
 
@@ -63,7 +63,7 @@
   display: inline-block;
   width: 50px;
   height: 50px;
-  color: #fff;
+  color: var(--main-color);
   transition: color 0.3s ease-in-out;
 }
 
@@ -72,8 +72,8 @@
 }
 .social__link:focus {
   color: #eadeed;
-  border: 1px solid #cd06ff;
+  border: 1px solid var(--accent-border);
 }
 .social__link:active {
-  color: #cd06ff;
+  color: var(--accent-border);
 }

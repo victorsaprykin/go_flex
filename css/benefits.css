@@ -8,14 +8,29 @@
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  gap: 46px 20px;
+  gap: 20px;
+}
+
+.item-box {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  flex-grow: 0;
+}
+
+.item-box:nth-child(2) {
+  padding-top: 70px;
 }
 
 .benefits__item {
   position: relative;
   flex-basis: 380px;
+  max-height: 228px;
   transition: transform .3s ease-in-out;
+  
 }
+
+
 
 .benefits__item:hover {
   transform: scale(1.1);

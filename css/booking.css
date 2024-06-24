@@ -1,6 +1,6 @@
 .booking {
   padding: 80px 0;
-  background-color: #440f51;
+  background-color: var(--accent-color);
 }
 
 .booking__title {
@@ -14,7 +14,7 @@
   font-size: 24px;
   line-height: 1.16667;
   text-align: center;
-  color: #fff;
+  color: var(--main-color);
 }
 
 .form__fun-subtitle {
@@ -59,7 +59,7 @@
   text-align: center;
   color: #000;
   border-radius: 8px;
-  background-color: #fff;
+  background-color: var(--main-color);
   cursor: pointer;
   transition: all 0.3s ease-in-out;
 }
@@ -69,20 +69,20 @@
   border: 3px solid #640aa3;
 }
 .form__label-hall:focus {
-  background-color: #fff;
+  background-color: var(--main-color);
   border: 3px solid #640aa3;
 }
 
 .form__hall:checked + .form__label-hall {
-  background-color: #6c0287;
-  color: #fff;
-  border: 3px solid #fff;
+  background-color: var(--accent-btn);
+  color: var(--main-color);
+  border: 3px solid var(--main-color);
 }
 
 .form__label-hall:active {
-  background-color: #6c0287;
-  color: #fff;
-  border: 3px solid #fff;
+  background-color: var(--accent-btn);
+  color: var(--main-color);
+  border: 3px solid var(--main-color);
 }
 
 .form__fun-fieldset {
@@ -111,7 +111,7 @@
   display: inline-block;
   width: 27px;
   height: 27px;
-  background-color: #fff;
+  background-color: var(--main-color);
   border-radius: 50%;
   vertical-align: text-top;
   transition: all 0.2s ease-in-out;
@@ -124,7 +124,7 @@
   content: '';
   width: 33px;
   height: 33px;
-  border: 1px solid #cd06ff;
+  border: 1px solid var(--accent-border);
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%) scale(0);
@@ -152,7 +152,7 @@
   display: inline-block;
   width: 25px;
   height: 25px;
-  background-color: #fff;
+  background-color: var(--main-color);
   vertical-align: text-top;
   transition: all 0.2s ease-in-out;
 }
@@ -166,7 +166,7 @@
   left: 50%;
   width: 33px;
   height: 33px;
-  border: 1px solid #cd06ff;
+  border: 1px solid var(--accent-border);
   transform: translate(-50%, -50%) scale(0);
   transition: 0.3s ease-in-out;
 }
@@ -208,7 +208,7 @@
 }
 
 .form__choice-input:focus {
-  border: 2px solid #cd06ff;
+  border: 2px solid var(--accent-border);
 }
 
 .form__choice-item {
@@ -259,7 +259,7 @@
   font-size: 18px;
   line-height: 1.55556;
   color: #211e1e;
-  background-color: #fff;
+  background-color: var(--main-color);
   flex-grow: 1;
 }
 
@@ -282,7 +282,7 @@
   font-weight: 700;
   font-size: 14px;
   line-height: 2.14286;
-  color: #fff;
+  color: var(--main-color);
 }
 
 .form__button {
@@ -299,25 +299,25 @@
   font-size: 22px;
   line-height: 1.27273;
   text-transform: uppercase;
-  color: #6c0287;
-  background-color: #fff;
+  color: var(--accent-btn);
+  background-color: var(--main-color);
   border-radius: 10px;
   transition: all 0.3s ease-in-out;
 }
 
 .form__btn:hover {
   background-color: #eadeed;
-  border: 3px solid #6c0287;
+  border: 3px solid var(--accent-btn);
 }
 
 .form__btn:focus {
-  color: #6c0287;
-  background-color: #fff;
-  border: 3px solid #6c0287;
+  color: var(--accent-btn);
+  background-color: var(--main-color);
+  border: 3px solid var(--accent-btn);
 }
 
 .form__btn:active {
-  color: #6c0287;
+  color: var(--accent-btn);
   background-color: #eadeed;
 }
 

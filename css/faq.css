@@ -17,8 +17,8 @@
   transition: 0.3s;
   font-weight: 700;
   font-size: 24px;
-  color: #000;
-  background-color: #fff;
+  color: #1c1a1a;
+  background-color: var(--main-color);
 }
 /* ==================================Общие для всех типом линий==================================*/
 .faq__item::after, .faq__item:nth-child(even)::after {
@@ -33,8 +33,8 @@
 
 /*========================================= Для цветных=========================================*/
 .faq__item:nth-child(even) {
-  background-color: #440f51;
-  color: #fff;
+  background-color: var(--accent-color);
+  color: var(--main-color);
 }
 
 .faq__item:nth-child(even)::after {
